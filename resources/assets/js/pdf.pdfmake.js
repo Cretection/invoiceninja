@@ -1100,9 +1100,13 @@ NINJA.subtotals = function(invoice, hideBalance)
         return [[]];
     }
 
+    
     var account = invoice.account;
     var data = [];
-    data.push([{text: invoiceLabels.subtotal, style: ['subtotalsLabel', 'subtotalLabel']}, {text: formatMoneyInvoice(invoice.subtotal_amount, invoice), style: ['subtotals', 'subtotal']}]);
+    /**
+    * ! Remove Subtotal
+    * data.push([{text: invoiceLabels.subtotal, style: ['subtotalsLabel', 'subtotalLabel']}, {text: formatMoneyInvoice(invoice.subtotal_amount, invoice), style: ['subtotals', 'subtotal']}]);
+    */
 
     if (invoice.discount_amount != 0) {
         data.push([{text: invoiceLabels.discount , style: ['subtotalsLabel', 'discountLabel']}, {text: formatMoneyInvoice(invoice.discount_amount, invoice), style: ['subtotals', 'discount']}]);
@@ -1128,6 +1132,11 @@ NINJA.subtotals = function(invoice, hideBalance)
             data.push([{text: taxStr, style: ['subtotalsLabel', 'taxLabel']}, {text: formatMoneyInvoice(taxRate.amount, invoice), style: ['subtotals', 'tax']}]);
         }
     }
+    /**
+    * ! Insert Value without Tax
+    */
+    var netto = invoice.amount - invoice.tax_amount1 - invoice.tax_amount2;
+    data.push([{text: 'Netto', style: ['subtotalsLabel']},{text: formatMoneyInvoice(netto, invoice), style: ['subtotals']}]);
 
     if (parseFloat(invoice.tax_rate1 || 0) != 0 || invoice.tax_name1) {
         var taxStr = invoice.tax_name1 + ' ' + (invoice.tax_rate1*1).toString() + '%';
