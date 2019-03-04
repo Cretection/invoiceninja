@@ -818,7 +818,7 @@ adresine gönderildi. Müthiş tüm özelliklerin kilidini açmak için lütfen 
     'archived_token' => 'Token başarıyla arşivlendi',
     'archive_user' => 'Kullanıcı Arşivle',
     'archived_user' => 'Kullanıcı başarıyla arşivlendi',
-    'archive_account_gateway' => 'Ödeme Sistemi Arşivle',
+    'archive_account_gateway' => 'Delete Gateway',
     'archived_account_gateway' => 'Ödeme sistemi başarıyla arşivlendi',
     'archive_recurring_invoice' => 'Tekrarlayan Fatura Arşivle',
     'archived_recurring_invoice' => 'Tekrarlayan fatura başarıyla arşivlendi',
@@ -2450,6 +2450,13 @@ adresine gönderildi. Müthiş tüm özelliklerin kilidini açmak için lütfen 
     'currency_mauritian_rupee' => 'Mauritian Rupee',
     'currency_cape_verdean_escudo' => 'Cape Verdean Escudo',
     'currency_kuwaiti_dinar' => 'Kuwaiti Dinar',
+    'currency_algerian_dinar' => 'Algerian Dinar',
+    'currency_macedonian_denar' => 'Macedonian Denar',
+    'currency_fijian_dollar' => 'Fijian Dollar',
+    'currency_bolivian_boliviano' => 'Bolivian Boliviano',
+    'currency_albanian_lek' => 'Albanian Lek',
+    'currency_serbian_dinar' => 'Serbian Dinar',
+    'currency_lebanese_pound' => 'Lebanese Pound',
 
     'review_app_help' => 'We hope you\'re enjoying using the app.<br/>If you\'d consider :link we\'d greatly appreciate it!',
     'writing_a_review' => 'writing a review',
@@ -3132,6 +3139,9 @@ adresine gönderildi. Müthiş tüm özelliklerin kilidini açmak için lütfen 
     'budgeted' => 'Budgeted',
     'please_enter_a_name' => 'Please enter a name',
     'click_plus_to_add_time' => 'Click + to add time',
+    'design' => 'Design',
+    'password_is_too_short' => 'Password is too short',
+    'failed_to_find_record' => 'Failed to find record',
 
 );
 

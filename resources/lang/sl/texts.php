@@ -815,7 +815,7 @@ Ne morete najti računa? Potrebujete dodatno pomoč? Z veseljem bomo pomagali. P
     'archived_token' => 'Žeton uspešno arhiviran',
     'archive_user' => 'Ahriviraj uporabnika',
     'archived_user' => 'Uporabnik uspešno arhiviran',
-    'archive_account_gateway' => 'Arhiviraj prehod',
+    'archive_account_gateway' => 'Delete Gateway',
     'archived_account_gateway' => 'Prehod uspešno akhiviran',
     'archive_recurring_invoice' => 'Arhiviraj ponavljajoči račun',
     'archived_recurring_invoice' => 'Ponavljajoči račun uspešno arhiviran',
@@ -2448,6 +2448,13 @@ Ko imate zneske, se vrnite na to stran plačilnega sredstva in kliknite na "Comp
     'currency_mauritian_rupee' => 'Mauritian Rupee',
     'currency_cape_verdean_escudo' => 'Cape Verdean Escudo',
     'currency_kuwaiti_dinar' => 'Kuwaiti Dinar',
+    'currency_algerian_dinar' => 'Algerian Dinar',
+    'currency_macedonian_denar' => 'Macedonian Denar',
+    'currency_fijian_dollar' => 'Fijian Dollar',
+    'currency_bolivian_boliviano' => 'Bolivian Boliviano',
+    'currency_albanian_lek' => 'Albanian Lek',
+    'currency_serbian_dinar' => 'Serbian Dinar',
+    'currency_lebanese_pound' => 'Lebanese Pound',
 
     'review_app_help' => 'We hope you\'re enjoying using the app.<br/>If you\'d consider :link we\'d greatly appreciate it!',
     'writing_a_review' => 'writing a review',
@@ -3130,6 +3137,9 @@ Ko imate zneske, se vrnite na to stran plačilnega sredstva in kliknite na "Comp
     'budgeted' => 'Budgeted',
     'please_enter_a_name' => 'Please enter a name',
     'click_plus_to_add_time' => 'Click + to add time',
+    'design' => 'Design',
+    'password_is_too_short' => 'Password is too short',
+    'failed_to_find_record' => 'Failed to find record',
 
 );
 
