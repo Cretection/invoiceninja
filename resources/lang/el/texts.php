@@ -819,7 +819,7 @@ email που είναι συνδεδεμένη με το λογαριασμό σ
     'archived_token' => 'Επιτυχής αρχειοθέτηση διακριτικού',
     'archive_user' => 'Αρχειοθέτηση Χρήστη',
     'archived_user' => 'Επιτυχής αρχειοθέτηση χρήστη',
-    'archive_account_gateway' => 'Αρχειοθέτηση Πύλης Πληρωμών (Gateway)',
+    'archive_account_gateway' => 'Διαγραφή Πύλης Πληρωμών (Gateway)',
     'archived_account_gateway' => 'Επιτυχής αρχειοθέτηση πύλης πληρωμών (Gateway)',
     'archive_recurring_invoice' => 'Αρχειοθέτηση Επαναλαμβανόμενου Τιμολογίου',
     'archived_recurring_invoice' => 'Επιτυχής αρχειοθέτηση επαναλαμβανόμενου τιμολογίου',
@@ -2450,7 +2450,14 @@ email που είναι συνδεδεμένη με το λογαριασμό σ
     'currency_cfp_franc' => 'CFP Franc',
     'currency_mauritian_rupee' => 'Ρουπία Μαυρίκιου',
     'currency_cape_verdean_escudo' => 'Εσκούδο Πράσινου Ακρωτηρίου',
-    'currency_kuwaiti_dinar' => 'Kuwaiti Dinar',
+    'currency_kuwaiti_dinar' => 'Δινάριο Κουβέιτ',
+    'currency_algerian_dinar' => 'Δηνάριο Αλγερίας',
+    'currency_macedonian_denar' => 'Δηνάριο Βόρειας Μακεδονίας',
+    'currency_fijian_dollar' => 'Δολάριο Νησιών Φίτζι',
+    'currency_bolivian_boliviano' => 'Βολιβιάνο Βολιβίας',
+    'currency_albanian_lek' => 'Albanian Lek',
+    'currency_serbian_dinar' => 'Serbian Dinar',
+    'currency_lebanese_pound' => 'Lebanese Pound',
 
     'review_app_help' => 'Ελπίζουμε να απολαμβάνετε τη χρήση της εφαρμογής.<br/> Εάν θα θέλατε να γράψετε μια κριτική :link θα το εκτιμούσαμε ιδιαίτερα!',
     'writing_a_review' => 'συγγραφή κριτικής',
@@ -3133,6 +3140,9 @@ email που είναι συνδεδεμένη με το λογαριασμό σ
     'budgeted' => 'Προϋπολογισμένο',
     'please_enter_a_name' => 'Παρακαλούμε εισάγετε ένα όνομα',
     'click_plus_to_add_time' => 'Πιέστε το + για να προσθέσετε χρόνο',
+    'design' => 'Σχεδίαση',
+    'password_is_too_short' => 'Ο κωδικός πρόσβασης είναι πολύ μικρός',
+    'failed_to_find_record' => 'Αποτυχία ανεύρεσης εγγραφής',
 
 );
 

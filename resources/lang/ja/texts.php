@@ -819,7 +819,7 @@ $LANG = array(
     'archived_token' => 'トークンをアーカイブしました。',
     'archive_user' => 'ユーザをアーカイブ',
     'archived_user' => 'ユーザをアーカイブしました。',
-    'archive_account_gateway' => 'ゲートウェイをアーカイブ',
+    'archive_account_gateway' => 'Delete Gateway',
     'archived_account_gateway' => 'ゲートウェイをアーカイブしました。',
     'archive_recurring_invoice' => '繰り返しの請求書をアーカイブ',
     'archived_recurring_invoice' => '繰り返しの請求書をアーカイブしました。',
@@ -2451,6 +2451,13 @@ $LANG = array(
     'currency_mauritian_rupee' => 'Mauritian Rupee',
     'currency_cape_verdean_escudo' => 'Cape Verdean Escudo',
     'currency_kuwaiti_dinar' => 'Kuwaiti Dinar',
+    'currency_algerian_dinar' => 'Algerian Dinar',
+    'currency_macedonian_denar' => 'Macedonian Denar',
+    'currency_fijian_dollar' => 'Fijian Dollar',
+    'currency_bolivian_boliviano' => 'Bolivian Boliviano',
+    'currency_albanian_lek' => 'Albanian Lek',
+    'currency_serbian_dinar' => 'Serbian Dinar',
+    'currency_lebanese_pound' => 'Lebanese Pound',
 
     'review_app_help' => 'We hope you\'re enjoying using the app.<br/>If you\'d consider :link we\'d greatly appreciate it!',
     'writing_a_review' => 'writing a review',
@@ -3133,6 +3140,9 @@ $LANG = array(
     'budgeted' => 'Budgeted',
     'please_enter_a_name' => 'Please enter a name',
     'click_plus_to_add_time' => 'Click + to add time',
+    'design' => 'Design',
+    'password_is_too_short' => 'Password is too short',
+    'failed_to_find_record' => 'Failed to find record',
 
 );
 
