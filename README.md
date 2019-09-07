@@ -23,13 +23,10 @@ The self-host zip includes all third party libraries whereas downloading the cod
 ## Referral Program
 * Earn 50% of Pro & Enterprise Plans up to 4 years - [Learn more](https://www.invoiceninja.com/referral-program/)
 
-## Mobile Apps
-* Current: [github.com/invoiceninja/flutter-mobile](https://github.com/invoiceninja/flutter-mobile)
-    * [iPhone](https://itunes.apple.com/us/app/invoice-ninja/id1435514417?ls=1&mt=8)
-    * [Android](https://play.google.com/store/apps/details?id=com.invoiceninja.flutter)
-* Legacy
-    * [iPhone](https://itunes.apple.com/us/app/invoice-ninja/id1220337560?ls=1&mt=8)
-    * [Android](https://play.google.com/store/apps/details?id=com.invoiceninja.invoiceninja)
+## Mobile App
+* [iPhone](https://itunes.apple.com/us/app/invoice-ninja/id1435514417?ls=1&mt=8)
+* [Android](https://play.google.com/store/apps/details?id=com.invoiceninja.flutter)
+* [Source Code](https://github.com/invoiceninja/flutter-mobile)
 
 ## Installation Options
 * [Ansible](https://github.com/invoiceninja/ansible-installer)
@@ -37,6 +34,7 @@ The self-host zip includes all third party libraries whereas downloading the cod
 * [Docker File](https://hub.docker.com/r/invoiceninja/invoiceninja/)
 * [Cloudron](https://cloudron.io/store/com.invoiceninja.cloudronapp.html)
 * [Softaculous](https://www.softaculous.com/apps/ecommerce/Invoice_Ninja)
+* [Lando](https://github.com/invoiceninja/invoiceninja/issues/2880)
 
 ## Recommended Providers
 * [Stripe](https://stripe.com/)
@@ -75,12 +73,15 @@ For information on how contribute to Invoice Ninja, please see our [contributing
 * [Troels Liebe Bentsen](https://github.com/tlbdk)
 * [Jeramy Simpson](https://github.com/JeramyMywork) - [MyWork](https://www.mywork.com.au)
 * [Sigitas Limontas](https://lt.linkedin.com/in/sigitaslimontas)
-* [Joshua Dwire](https://github.com/joshuadwire) - [Some Techie](https://www.sometechie.com)
+* [Joshua Dwire](https://github.com/joshuadwire) - [Bold Compass](https://boldcompass.com/)
 * [Holger Lösken](https://github.com/codedge) - [codedge](http://codedge.de)
 * [Samuel Laulhau](https://github.com/lalop) - [Lalop](http://lalop.co/)
 * [Alexander Zamponi](https://github.com/alexz707)
 * [Matthieu Calie](https://github.com/Matth--)
-* [Suhas Sunil Gaikwad](https://github.com/Suhas-Gaikwad) - (Security)
+* [Christopher Di Carlo](https://github.com/dicarlosystems) - [Di Carlo Systems Inc.](https://www.dicarlosystems.ca)
+* [Kristian Feldsam](https://github.com/feldsam) - [FeldHost™](https://www.feldhost.net)
+* [Suhas Sunil Gaikwad](https://github.com/Suhas-Gaikwad)
+* [Mike Skaggs](https://github.com/titan-fail)
 
 ## License
 Invoice Ninja is released under the Attribution Assurance License.  
