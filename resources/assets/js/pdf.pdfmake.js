@@ -1102,12 +1102,45 @@ NINJA.subtotals = function(invoice, hideBalance)
 
     var account = invoice.account;
     var data = [];
-    data.push([{text: invoiceLabels.subtotal, style: ['subtotalsLabel', 'subtotalLabel']}, {text: formatMoneyInvoice(invoice.subtotal_amount, invoice), style: ['subtotals', 'subtotal']}]);
-
+    
+    // SECTION Netto-Betrag: Rechnung und Ausgabe
+    // NOTE Zwischensumme: deaktivieren
+    // data.push([{text: invoiceLabels.subtotal, style: ['subtotalsLabel', 'subtotalLabel']}, {text: formatMoneyInvoice(invoice.subtotal_amount, invoice), style: ['subtotals', 'subtotal']}]);
+    // NOTE Netto-Betrag: variable Definieren
+    
+    var pretax_amount = invoice.subtotal_amount;
+    
+    // SECTION Rabatt: Ausgabe & Abzug von Netto-Betrag   
+    
     if (invoice.discount_amount != 0) {
+        // NOTE Rabatt vom Netto-Betrag abziehen
+        pretax_amount -= invoice.discount_amount;
         data.push([{text: invoiceLabels.discount , style: ['subtotalsLabel', 'discountLabel']}, {text: formatMoneyInvoice(invoice.discount_amount, invoice), style: ['subtotals', 'discount']}]);
     }
 
+    // !SECTION
+    // SECTION Artikel-Steuer: Abzug von Netto-Betrag
+
+    for (var key in invoice.item_taxes) {
+        if (invoice.item_taxes.hasOwnProperty(key)) {
+            var taxRate = invoice.item_taxes[key];
+            pretax_amount -= taxRate.amount;
+        }
+    }
+    // !SECTION
+    // SECTION Rechnungssteuer: Abzug vom Netto-Betrag
+    if (parseFloat(invoice.tax_rate1 || 0) != 0 || invoice.tax_name1) {
+        pretax_amount -= invoice.tax_amount1;
+    }
+    if (parseFloat(invoice.tax_rate2 || 0) != 0 || invoice.tax_name2) {
+        pretax_amount -= invoice.tax_amount2;
+    }
+    // !SECTION
+
+    // NOTE Ausgabe des echten Netto-Betrags als Zwischensumme
+    data.push([{text: invoiceLabels.subtotal, style: ['subtotalsLabel', 'subtotalLabel']}, {text: formatMoneyInvoice(pretax_amount, invoice), style: ['subtotals', 'subtotal']}]);
+
+    // !SECTION
     var customValue1 = NINJA.parseFloat(invoice.custom_value1);
     var customValue1Label = account.custom_fields.invoice1 || invoiceLabels.surcharge;
 
@@ -1125,6 +1158,7 @@ NINJA.subtotals = function(invoice, hideBalance)
         if (invoice.item_taxes.hasOwnProperty(key)) {
             var taxRate = invoice.item_taxes[key];
             var taxStr = taxRate.name + ' ' + (taxRate.rate*1).toString() + '%';
+            pretax_amount -= taxRate.amount;
             data.push([{text: taxStr, style: ['subtotalsLabel', 'taxLabel']}, {text: formatMoneyInvoice(taxRate.amount, invoice), style: ['subtotals', 'tax']}]);
         }
     }
